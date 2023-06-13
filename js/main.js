@@ -34,17 +34,25 @@ const menu = document.getElementById("menu");
 
 const showCloseMenuMobile = () => {
   if (itemsnavbar.classList.contains("hidden")) {
+    itemsnavbar.classList.remove("scale-out-hor-right");
+    itemsnavbar.classList.add("scale-in-hor-right");
     itemsnavbar.classList.remove("hidden");
     iconmenu.classList.add("fa-times");
     iconmenu.classList.remove("fa-bars");
   } else {
-    itemsnavbar.classList.add("hidden");
+    itemsnavbar.classList.remove("scale-in-hor-right");
+    itemsnavbar.classList.add("scale-out-hor-right");
     iconmenu.classList.remove("fa-times");
     iconmenu.classList.add("fa-bars");
+    setTimeout(() => {
+      itemsnavbar.classList.add("hidden");
+    }, 500);
   }
 };
 
 iconmenu.addEventListener("click", showCloseMenuMobile);
+
+itemsnavbar.addEventListener("click", showCloseMenuMobile);
 
 window.addEventListener("resize", () => {});
 

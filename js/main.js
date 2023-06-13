@@ -54,7 +54,24 @@ iconmenu.addEventListener("click", showCloseMenuMobile);
 
 itemsnavbar.addEventListener("click", showCloseMenuMobile);
 
-window.addEventListener("resize", () => {});
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    if (itemsnavbar.classList.contains("hidden")) {
+      itemsnavbar.classList.remove("hidden");
+      itemsnavbar.classList.remove("scale-out-hor-right");
+      itemsnavbar.classList.remove("scale-in-hor-right");
+    } else if (itemsnavbar.classList.contains("scale-out-hor-right")) {
+      itemsnavbar.classList.remove("scale-out-hor-right");
+      itemsnavbar.classList.remove("scale-in-hor-right");
+    }
+  } else {
+    itemsnavbar.classList.remove("scale-in-hor-right");
+    itemsnavbar.classList.add("scale-out-hor-right");
+    iconmenu.classList.remove("fa-times");
+    iconmenu.classList.add("fa-bars");
+    itemsnavbar.classList.add("hidden");
+  }
+});
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {

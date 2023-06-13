@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  transition: 0.5s;
+  padding: 20px 30px;
+  position: fixed;
+  z-index: 10;
+  color: #fff;
+}
+.navbar div h2 {
+  font-weight: 600;
+  font-size: 30px;
+  z-index: 10;
+}
+.navbar ul {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  right: 0;
+  position: absolute;
+  align-items: center;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+}
+.navbar ul a li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar .iconmenu {
+  font-size: 30px;
+  z-index: 9;
+}
+
+.menuColor {
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .navbar .iconmenu {
+    display: none;
+  }
+  .navbar ul {
+    width: auto;
+    height: auto;
+    display: flex !important;
+    flex-direction: row;
+    gap: 30px;
+    background: none;
+    position: relative;
+  }
+  .navbar ul a li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+.header {
+  width: 100%;
+  height: 600px;
+  background: #000;
+  padding: 3% 10%;
+}
+.header section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+  align-items: center;
+}
+.header section figure {
+  width: 170px;
+  height: 230px;
+  border: 2px solid #fff;
+}
+.header section figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header section article {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.header section article a {
+  background-color: #fff;
+  padding: 10px 15px;
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 3% 15%;
+    height: 100vh;
+  }
+  .header section {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .header section figure {
+    width: 340px;
+    height: 460px;
+    border: 2px solid #fff;
+  }
+  .header section figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .header section article {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header section article h1 {
+    font-size: 50px;
+  }
+  .header section article a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    padding: 0;
+    color: #000;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .header section article a:hover {
+    background: none;
+    color: #fff;
+    transition: 0.5s;
+  }
+}
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: 900px;
+}
+.about section {
+  width: 100%;
+  height: 450px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about section .sec1 h2 {
+  font-size: 30px;
+}
+.about section .sec1 .rectangleAbout {
+  width: 150px;
+  height: 3px;
+  background: #000;
+}
+.about section a {
+  background: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  height: 50px;
+  padding: 5px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 2px solid #000;
+}
+.about section a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .about {
+    flex-direction: row-reverse;
+    min-height: 680px;
+  }
+  .about section {
+    width: 60%;
+    height: inherit;
+    gap: 30px;
+  }
+  .about section a {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+  }
+}
+.skills {
+  width: 100%;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.skills h3 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+.skills article {
+  padding: 10px 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.skills article div {
+  display: flex;
+  gap: 30px;
+}
+.skills article div .iconSkills {
+  font-size: 40px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .skills h3 {
+    padding: 10px 0;
+    font-size: 40px;
+  }
+  .skills article div {
+    gap: 50px;
+  }
+  .skills article div .iconSkills {
+    font-size: 60px;
+    color: #fff;
+  }
+}
+.portfolio {
+  width: 100%;
+  min-height: 580px;
+  padding: 5% 10%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.portfolio h2 {
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.portfolio .secCards {
+  width: inherit;
+  height: inherit;
+}
+.portfolio .secCards div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.portfolio .secCards div .card {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio .secCards div .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.portfolio .secCards div .card figcaption {
+  width: 100%;
+  height: 200px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 0px 0px 5px 5px;
+}
+.portfolio .secCards div .card figcaption a {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  border: 2px solid #000;
+  background-color: #000;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.portfolio .secCards div .card figcaption a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .portfolio h2 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+  .portfolio .secCards div .card {
+    width: 350px;
+  }
+  .portfolio .secCards div .card figcaption {
+    gap: 30px;
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact figure {
+  width: 100%;
+  height: 400px;
+}
+.contact figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact form {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.contact form h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact form div input, .contact form div textarea {
+  width: 350px;
+  height: 40px;
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact form div input:focus, .contact form div textarea:focus {
+  outline: none;
+}
+.contact form div textarea {
+  height: 50px;
+  resize: none;
+}
+.contact form div textarea::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+.contact form div textarea::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+}
+.contact form button {
+  margin: 10px 0;
+  width: 350px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact form button:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+}
+
+@media (min-width: 992px) {
+  .contact {
+    flex-direction: row;
+  }
+  .contact figure {
+    width: 50%;
+    height: 480px;
+  }
+  .contact form {
+    width: 50%;
+    height: 480px;
+  }
+  .contact form h2 {
+    font-size: 40px;
+  }
+}
+footer {
+  width: 100%;
+  height: 250px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+footer h2 {
+  font-size: 30px;
+}
+footer div {
+  display: flex;
+  gap: 30px;
+}
+footer div a {
+  color: #fff;
+}
+footer div a i {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  footer {
+    height: 230px;
+  }
+  footer h2 {
+    font-size: 40px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

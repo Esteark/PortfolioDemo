@@ -1,0 +1,100 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  figure {
+    width: 100%;
+    height: 400px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  form {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        width: 350px;
+        height: 40px;
+        padding: 0 10px;
+        font-family: $MainFont;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 2px solid $mainColor;
+        font-size: 1rem;
+        font-weight: 500;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        @extend input;
+        height: 50px;
+        resize: none;
+      }
+
+      textarea::-webkit-scrollbar {
+        width: 5px;
+        background-color: $secondaryColor;
+      }
+
+      textarea::-webkit-scrollbar-thumb {
+        background-color: $mainColor;
+        border-radius: 10px;
+      }
+    }
+    button {
+      margin: 10px 0;
+      width: 350px;
+      height: 40px;
+      font-family: $MainFont;
+      border: 2px solid $mainColor;
+      background-color: $mainColor;
+      color: $secondaryColor;
+      transition: 0.5s;
+      font-family: $MainFont;
+      border-radius: 5px;
+
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+      &:hover {
+        background-color: $secondaryColor;
+        color: $mainColor;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    flex-direction: row;
+    figure {
+      width: 50%;
+      height: 480px;
+    }
+    form {
+      width: 50%;
+      height: 480px;
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+}

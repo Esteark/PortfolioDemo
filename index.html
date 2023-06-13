@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EsteArk portafolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("AMWAD4oqm8eWfvNq9");
+    </script>
+  </head>
+  <body>
+    <nav class="navbar" id="menu">
+      <div>
+        <h2>E<span>A</span></h2>
+      </div>
+      <ul class="hidden" id="itemsnavbar">
+        <a href="#home"><li>Home</li></a>
+        <a href="#about"><li>Sobre Mí</li></a>
+        <a href="#portfolio"><li>portafolio</li></a>
+        <a href="#contact"><li>Contacto</li></a>
+      </ul>
+      <i class="iconmenu fas fa-bars" id="iconmenu"></i>
+    </nav>
+    <header class="header" id="home">
+      <section>
+        <figure>
+          <img src="./img/img1.jpg" alt="" />
+        </figure>
+        <article>
+          <h1>Soy Esteban Ardila</h1>
+          <p>
+            Un desarrollador front End apasionado por el diseño web y la
+            Animación UI
+          </p>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1ROddGwksD8kRK3CjftiwqZFoedtGkNnv"
+            >Descargar mi cv</a
+          >
+        </article>
+      </section>
+    </header>
+    <section class="about" id="about">
+      <section class="skills" id="skills">
+        <h3>Mis Habilidades</h3>
+        <article>
+          <div>
+            <i class="fab fa-css3-alt iconSkills"></i>
+            <i class="fab fa-sass iconSkills"></i>
+            <i class="fab fa-js-square iconSkills"></i>
+          </div>
+          <div>
+            <i class="fab fa-node-js iconSkills"></i>
+            <i class="fab fa-react iconSkills"></i>
+            <i class="fab fa-html5 iconSkills"></i>
+          </div>
+          <div>
+            <i class="fab fa-figma iconSkills"></i>
+            <i class="fab fa-github iconSkills"></i>
+            <i class="fas fa-database iconSkills"></i>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article class="sec1">
+          <h2>Sobre mí</h2>
+          <div class="rectangleAbout"></div>
+        </article>
+        <article class="sec2">
+          <p>
+            Soy un desarrollador apasionado por la tecnología y con experiencia
+            en tecnologías como SASS, React, Node JS, GitHub, SQL y herramientas
+            de Power Platform.
+          </p>
+          <br />
+          <p>
+            Mi experiencia con SASS me ha permitido crear estilos sofisticados y
+            reutilizables, mejorando la eficiencia del flujo de trabajo. Mi
+            dominio de React JS me ha permitido construir interfaces de usuario
+            interactivas y dinámicas,brindando a los usuarios una experiencia
+            excepcional.
+          </p>
+        </article>
+        <a
+          href="https://www.linkedin.com/in/esteban-ardila-044087188/"
+          target="_blank"
+          >Más info</a
+        >
+      </section>
+    </section>
+
+    <main class="portfolio" id="portfolio">
+      <h2>Algunos trabajos</h2>
+      <section class="secCards">
+        <div>
+          <figure class="card">
+            <img src="./img/1.jpg" alt="" />
+            <figcaption>
+              <h3>Street Makers</h3>
+              <p>Proyecto realizado con React, SASS ...</p>
+              <a
+                href="https://streetmakersportfolio.vercel.app/
+"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./img/2.jpg" alt="" />
+            <figcaption>
+              <h3>PizzaScript</h3>
+              <p>Proyecto realizado con React, SASS ...</p>
+              <a
+                href="https://portfolio-pizza-script.vercel.app
+"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./img/3.jpg" alt="" />
+            <figcaption>
+              <h3>AirLines</h3>
+              <p>Proyecto realizado con React, SASS ...</p>
+              <a
+                href="https://sprint2-aerolinea-j9y4r995m-esteark.vercel.app/"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="card">
+            <img src="./img/4.jpg" alt="" />
+            <figcaption>
+              <h3>Casa Royal</h3>
+              <p>Proyecto realizado con HTML,CSS,JS ...</p>
+              <a
+                href="https://esteark.github.io/PortfolioWorks/CasaRoyal"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./img/5.jpg" alt="" />
+            <figcaption>
+              <h3>Exos</h3>
+              <p>Proyecto realizado con HTML,CSS,JS ...</p>
+              <a
+                href="https://esteark.github.io/PortfolioWorks/Exos"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./img/6.jpg" alt="" />
+            <figcaption>
+              <h3>Credit Demo</h3>
+              <p>Proyecto realizado con HTML,CSS,JS ...</p>
+              <a
+                href="https://esteark.github.io/PortfolioWorks/CreditCardForm"
+                target="_blank"
+                >Ver proyecto</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <section class="contact" id="contact">
+      <figure>
+        <img src="./img/img2.jpg" alt="" />
+      </figure>
+      <form id="form">
+        <h2>Hablemos</h2>
+        <div>
+          <input
+            type="text"
+            placeholder="Nombre"
+            name="from_name"
+            id="from_name"
+          />
+          <input
+            type="text"
+            placeholder="Email"
+            name="email_id"
+            id="email_id"
+          />
+          <textarea
+            placeholder="Mensaje"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <h2>Esteban Ardila</h2>
+      <p>FrontEnd Developer</p>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/esteban-ardila-044087188/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Esteark" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" type="text/javascript"></script>
+  </body>
+</html>

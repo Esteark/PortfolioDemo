@@ -26,6 +26,10 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <script type="text/javascript">
       emailjs.init("AMWAD4oqm8eWfvNq9");
@@ -34,28 +38,47 @@
   <body>
     <nav class="navbar" id="menu">
       <div>
-        <h2>E<span>A</span></h2>
+        <h2 class="animate__animated wow animate__bounceIn">E<span>A</span></h2>
       </div>
       <ul class="hidden" id="itemsnavbar">
-        <a href="#home"><li>Home</li></a>
-        <a href="#about"><li>Sobre Mí</li></a>
-        <a href="#portfolio"><li>portafolio</li></a>
-        <a href="#contact"><li>Contacto</li></a>
+        <a
+          href="#home"
+          class="animate__animated wow animate__fadeIn animate__delay-1s"
+          ><li>Home</li></a
+        >
+        <a
+          href="#about"
+          class="animate__animated wow animate__fadeIn animate__delay-1s"
+          ><li>Sobre Mí</li></a
+        >
+        <a
+          href="#portfolio"
+          class="animate__animated wow animate__fadeIn animate__delay-1s"
+          ><li>portafolio</li></a
+        >
+        <a
+          href="#contact"
+          class="animate__animated wow animate__fadeIn animate__delay-1s"
+          ><li>Contacto</li></a
+        >
       </ul>
       <i class="iconmenu fas fa-bars" id="iconmenu"></i>
     </nav>
     <header class="header" id="home">
       <section>
-        <figure>
+        <figure class="animate__animated wow animate__backInDown">
           <img src="./img/img1.jpg" alt="" />
         </figure>
         <article>
-          <h1>Soy Esteban Ardila</h1>
-          <p>
+          <h1 class="animate__animated wow animate__backInLeft">
+            Soy Esteban Ardila
+          </h1>
+          <p class="animate__animated wow animate__backInLeft">
             Un desarrollador front End apasionado por el diseño web y la
             Animación UI
           </p>
           <a
+            class="animate__animated wow animate__backInLeft animate__delay-1s"
             href="https://drive.google.com/uc?export=download&id=1ROddGwksD8kRK3CjftiwqZFoedtGkNnv"
             >Descargar mi cv</a
           >
@@ -63,32 +86,47 @@
       </section>
     </header>
     <section class="about" id="about">
-      <section class="skills" id="skills">
-        <h3>Mis Habilidades</h3>
+      <section
+        class="skills animate__animated wow animate__fadeInRight"
+        id="skills"
+      >
+        <h3 class="animate__animated wow animate__bounceIn animate__delay-1s">
+          Mis Habilidades
+        </h3>
         <article>
-          <div>
+          <div
+            class="animate__animated wow animate__bounceIn animate__delay-1s"
+          >
             <i class="fab fa-css3-alt iconSkills"></i>
             <i class="fab fa-sass iconSkills"></i>
             <i class="fab fa-js-square iconSkills"></i>
           </div>
-          <div>
+          <div
+            class="animate__animated wow animate__bounceIn animate__delay-1s"
+          >
             <i class="fab fa-node-js iconSkills"></i>
             <i class="fab fa-react iconSkills"></i>
             <i class="fab fa-html5 iconSkills"></i>
           </div>
-          <div>
+          <div
+            class="animate__animated wow animate__bounceIn animate__delay-1s"
+          >
             <i class="fab fa-figma iconSkills"></i>
             <i class="fab fa-github iconSkills"></i>
             <i class="fas fa-database iconSkills"></i>
           </div>
         </article>
       </section>
-      <section>
-        <article class="sec1">
+      <section class="animate__animated wow animate__fadeInLeft">
+        <article
+          class="sec1 animate__animated animate__fadeIn wow animate__delay-1s"
+        >
           <h2>Sobre mí</h2>
           <div class="rectangleAbout"></div>
         </article>
-        <article class="sec2">
+        <article
+          class="sec2 animate__animated animate__fadeIn wow animate__delay-1s"
+        >
           <p>
             Soy un desarrollador apasionado por la tecnología y con experiencia
             en tecnologías como SASS, React, Node JS, GitHub, SQL y herramientas
@@ -106,14 +144,22 @@
         <a
           href="https://www.linkedin.com/in/esteban-ardila-044087188/"
           target="_blank"
+          class="animate__animated animate__fadeIn wow animate__delay-1s"
           >Más info</a
         >
       </section>
     </section>
 
-    <main class="portfolio" id="portfolio">
-      <h2>Algunos trabajos</h2>
-      <section class="secCards">
+    <main
+      class="portfolio animate__animated wow animate__fadeIn"
+      id="portfolio"
+    >
+      <h2 class="animate__animated wow animate__fadeInDown animate__delay-1s">
+        Algunos trabajos
+      </h2>
+      <section
+        class="secCards animate__animated wow animate__fadeInUp animate__delay-1s"
+      >
         <div>
           <figure class="card">
             <img src="./img/1.jpg" alt="" />
@@ -196,10 +242,10 @@
     </main>
 
     <section class="contact" id="contact">
-      <figure>
+      <figure class="animate__animated wow animate__bounceInLeft">
         <img src="./img/img2.jpg" alt="" />
       </figure>
-      <form id="form">
+      <form id="form" class="animate__animated wow animate__bounceInRight">
         <h2>Hablemos</h2>
         <div>
           <input
@@ -223,7 +269,7 @@
         <button>Enviar</button>
       </form>
     </section>
-    <footer>
+    <footer class="animate__animated wow animate__fadeInUp">
       <h2>Esteban Ardila</h2>
       <p>FrontEnd Developer</p>
       <div>
@@ -238,7 +284,7 @@
         ></a>
       </div>
     </footer>
-
+    <script src="./js/wow.min.js" type="text/javascript"></script>
     <script src="./js/main.js" type="text/javascript"></script>
   </body>
 </html>

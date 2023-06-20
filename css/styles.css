@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -402,7 +403,8 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
   gap: 20px;
 }
-.contact form div input, .contact form div textarea {
+.contact form div input,
+.contact form div textarea {
   width: 350px;
   height: 40px;
   padding: 0 10px;
@@ -414,7 +416,8 @@ body::-webkit-scrollbar-track {
   font-size: 1rem;
   font-weight: 500;
 }
-.contact form div input:focus, .contact form div textarea:focus {
+.contact form div input:focus,
+.contact form div textarea:focus {
   outline: none;
 }
 .contact form div textarea {
@@ -500,7 +503,8 @@ footer div a i {
   }
 }
 .scale-in-hor-right {
-  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: scale-in-hor-right 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -537,7 +541,8 @@ footer div a i {
   }
 }
 .scale-out-hor-right {
-  -webkit-animation: scale-out-hor-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  -webkit-animation: scale-out-hor-right 0.5s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: scale-out-hor-right 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 

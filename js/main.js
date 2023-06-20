@@ -40,13 +40,15 @@ const showCloseMenuMobile = () => {
     iconmenu.classList.add("fa-times");
     iconmenu.classList.remove("fa-bars");
   } else {
-    itemsnavbar.classList.remove("scale-in-hor-right");
-    itemsnavbar.classList.add("scale-out-hor-right");
-    iconmenu.classList.remove("fa-times");
-    iconmenu.classList.add("fa-bars");
-    setTimeout(() => {
-      itemsnavbar.classList.add("hidden");
-    }, 500);
+    if (window.innerWidth < 768) {
+      itemsnavbar.classList.remove("scale-in-hor-right");
+      itemsnavbar.classList.add("scale-out-hor-right");
+      iconmenu.classList.remove("fa-times");
+      iconmenu.classList.add("fa-bars");
+      setTimeout(() => {
+        itemsnavbar.classList.add("hidden");
+      }, 500);
+    }
   }
 };
 
@@ -147,3 +149,5 @@ form.addEventListener("submit", (e) => {
     }
   }
 });
+
+new WOW().init();

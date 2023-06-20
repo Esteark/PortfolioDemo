@@ -20,9 +20,19 @@
     div {
       display: flex;
       gap: 30px;
-      .iconSkills {
-        font-size: 40px;
+      .secIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
         color: $secondaryColor;
+        p {
+          font-size: 12px;
+        }
+        .iconSkills {
+          font-size: 40px;
+          color: $secondaryColor;
+        }
       }
     }
   }
